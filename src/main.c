@@ -3,7 +3,8 @@
 #include <fcntl.h>
 
 main(){
-   fh=open("/etc/os-release",O_RDONLY);
+    int fh;
+    fh=open("/etc/os-release",O_RDONLY);
 
-   close(fh);
+    close(fh);
 }
